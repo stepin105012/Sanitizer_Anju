@@ -1,0 +1,77 @@
+<html>   
+   <head>
+      <title>Registration</title>     
+
+      <link rel="stylesheet" type="text/css" href="./style.css"/>
+      <style>
+         body{
+               background-image: url("./image1.jpg");
+                   background-attachment: fixed;
+               background-repeat: no-repeat;
+               background-size: 100% 100%;
+   
+            }
+      </style>
+      
+   </head>
+   
+   <body>
+       <h1> Registration Form</h1>
+      <form action = "/cgi-bin/test.cgi" name = "myForm">
+         <table cellspacing = "2" cellpadding = "2" border = "1">
+            
+            <tr>
+               <td align = "right">Name</td>
+               <td><input type = "text" name = "Name" /></td>
+            </tr>
+            <tr>
+               <td align = "right">Address</td>
+               <td><input type = "text" name = "Address" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">EMail</td>
+               <td><input type = "text" name = "EMail" /></td>
+            </tr>
+            <tr>
+               <td align = "right">Phone Number</td>
+               <td><input type = "text" name = "Phone Number" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Brand</td>
+               <td>
+                  <select name = "Brand">
+                     <option value = "-1" selected>[choose yours]</option>
+                     <option value = "1">Himalaya</option>
+                     <option value = "2">Dettol</option>
+                     <option value = "3">Knox</option>
+					 <option value = "4">Lifebuoy</option>
+					 <option value = "5">Patanjali</option>
+                  </select>
+               </td>
+            </tr>   
+			<tr>
+               <td align = "right">Quantity</td>
+               <td>
+                  <select name = "Quantity">
+                     <option value = "-1" selected>[choose yours]</option>
+                     <option value = "1">10ml</option>
+                     <option value = "2">100ml</option>
+                     <option value = "3">250ml</option>
+					 <option value = "4">500ml</option>
+					 <option value = "5">1000ml</option>
+                  </select>
+               </td>
+            </tr>   
+           
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" value = "Submit" /></td>
+            </tr>
+            
+         </table>
+      </form>      
+   </body>
+</html>
